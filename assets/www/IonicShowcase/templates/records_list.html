@@ -1,0 +1,53 @@
+<ion-view>
+  <ion-content scroll="false">
+
+    <h2 align="center" id="pageTitle">Saved Records</h2>
+
+    <div class="savedRecordsContainer" ng-init="getAllRecords()">
+      <div scroll="true">
+        <ion-list ng-repeat="x in savedRecords">
+          <div class="item item-body savedRecordsListItemBg">
+            <div class="row">
+              <div class="col col-40 savedRecordsListItemLabels">DAS ID</div>
+              <div class="col col-60 savedRecordsListItemValues">{{x.dasId}}</div>
+            </div>
+            <div class="row">
+              <div class="col col-40 savedRecordsListItemLabels">Name</div>
+              <div class="col col-60 savedRecordsListItemValues">{{x.name}}</div>
+            </div>
+            <div class="row">
+              <div class="col col-40 savedRecordsListItemLabels">Request Type</div>
+              <div class="col col-60 savedRecordsListItemValues">{{x.requestType}}</div>
+            </div>
+            <div class="row">
+              <div class="col col-40 savedRecordsListItemLabels">Description</div>
+              <div class="col col-60 savedRecordsListItemValues">{{x.requestDescription}}</div>
+            </div>
+            <div class="row">
+              <div class="col col-40 savedRecordsListItemLabels">Date</div>
+              <div class="col col-60 savedRecordsListItemValues">{{x.date}}</div>
+            </div>
+            <div class="row">
+              <div class="col col-40 savedRecordsListItemLabels">Contact</div>
+              <div class="col col-40 savedRecordsListItemValues">{{x.contact}}</div>
+              <div class="col col-20" ng-click="sendSms(x)"><img src="./images/ic_message.png"
+                                                                 id="savedRecordsCallBtn"></div>
+            </div>
+
+          </div>
+        </ion-list>
+      </div>
+      <div style="position:fixed; z-index:9999">
+        <a class="addRecordButton" ng-click="addRecord()">+</a>
+      </div>
+    </div>
+
+  </ion-content>
+
+</ion-view>
+
+
+
+
+
+

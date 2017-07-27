@@ -1,0 +1,106 @@
+
+
+/*Login Screen*/
+.app-logo{
+  font-size: 50px;
+}
+
+hgroup {
+	text-align:center;
+	margin-top: 4em;
+	margin-bottom: 2em;
+}
+
+h2, h4{ font-weight: 300; }
+
+h2 { color: #424242; }
+
+h4 { color: #1565C0; }
+
+.loginForm{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.linkRegister{
+  color: #2979FF;
+  padding-top: 30px;
+}
+
+.spinner svg {
+  width: 70px !important;
+  height: 70px !important;
+}
+
+/*Dashboard Screen*/
+.dashboardParent{height: 85%}
+.dashboardRow{height: 50%}
+.dashboardItem{ border-radius:2px; padding:20px; box-shadow:0px -1px 3px rgba(0,0,0,0.1),	0px 2px 6px rgba(0,0,0,0.5); height:180px}
+
+/*Saved Records Screen*/
+.savedRecordsContainer{
+    position: relative;
+}
+
+.savedRecordsListItemBg{
+    margin: 5px;
+    border-radius:2px;
+    box-shadow:0px -1px 3px rgba(0,0,0,0.1),	0px 2px 6px rgba(0,0,0,0.5);
+}
+.savedRecordsListItemLabels{
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	  font-size: 16px;
+	  font-weight: bold;
+	  color: #424242;
+	  padding-top: 5px;
+	  padding-bottom: 5px;
+	  padding-left: 3%;
+	  padding-right: 3%;
+}
+.savedRecordsListItemValues{
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	  font-size: 16px;
+	  font-weight: normal;
+	  color: #757575;
+	  padding-top: 5px;
+	  padding-bottom: 5px;
+	  padding-left: 3%;
+	  padding-right: 3%;
+}
+.addRecordButton {
+    display:block;
+    position: fixed;
+    margin: 10px;
+    bottom: 0;
+    right: 0;
+    width:70px;
+    height:70px;
+    line-height:70px;
+    border-radius: 100%;
+    color:#FFFFFF;
+    text-align:center;
+    background: #0277BD;
+    font-size:40px;
+    font-weight:normal;
+    z-index:9999;
+}
+.addRecordButton:active {
+    background: #01579B;
+}
+
+#savedRecordsCallBtn{
+    background: transparent;
+    width: 30px;
+}
+
+/*My SQLite Operations Screen*/
+.sqlitePageForm{padding-right: 10px; padding-left: 10px; padding-top: 10px;}
+
+/*Barcode Scanner Screen*/
+#barcodePage{font-size: 16x; color: #757575;  margin: 10px;}
+
+/*My Profile Screen*/
+#pageTitle{font-size: 24x; color: #616161; padding-top: 25px;}
+#userProfileLabels{font-size: 16x; color: #757575;}
+#userProfileIcons{background: transparent; width: 30px;}
+

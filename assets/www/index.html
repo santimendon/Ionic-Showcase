@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title></title>
+
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+  <link href="css/ionic_showcase_style.css" rel="stylesheet">
+
+  <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+  <link href="css/ionic.app.css" rel="stylesheet">
+  -->
+
+  <!-- ionic/angularjs js -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+  <!--<script src="http://maps.google.com/maps/api/js"></script>-->
+
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="lib/ng-cordova.min.js"></script>
+  <script src="cordova.js"></script>
+  <script src="lib/cryptojs-aes.js"></script>
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/sha256.js"></script>
+
+  <!-- your app's js -->
+  <script src="IonicShowcase/ionic_showcase_app.js"></script>
+  <script src="IonicShowcase/ionic_showcase_route.js"></script>
+  <script src="IonicShowcase/ionic_showcase_services.js"></script>
+  <script src="IonicShowcase/controllers/LoginController.js"></script>
+  <script src="IonicShowcase/controllers/DashboardController.js"></script>
+  <script src="IonicShowcase/controllers/CameraController.js"></script>
+  <script src="IonicShowcase/controllers/UserProfileController.js"></script>
+  <script src="IonicShowcase/controllers/RecordsListController.js"></script>
+  <script src="IonicShowcase/controllers/SqliteController.js"></script>
+  <script src="IonicShowcase/controllers/BarcodeScannerController.js"></script>
+  <script src="IonicShowcase/controllers/GeolocatorController.js"></script>
+  <script src="constants/strings.js"></script>
+
+
+</head>
+<body ng-app="IonicShowcase">
+<ion-nav-view>
+
+</ion-nav-view>
+</body>
+</html>

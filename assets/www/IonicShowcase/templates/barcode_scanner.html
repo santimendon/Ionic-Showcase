@@ -1,0 +1,24 @@
+<ion-view>
+  <ion-content scroll="false">
+
+    <h2 align="center" id="pageTitle">Barcode Scanner</h2>
+
+    <div class="item item-body" id="barcodePage">
+      <div class="row">
+        <div class="col col-40"><b>DATA:</b></div>
+        <div class="col col-60">{{barcode.barcodeData}}</div>
+      </div>
+      <div class="row">
+        <div class="col col-40"><b>BARCODE FORMAT:</b></div>
+        <div class="col col-60">{{barcode.barcodeFormat}}</div>
+      </div>
+
+      <button class="button button-dark button-block" ng-click="scanBarcode()">
+        Scan Barcode
+      </button>
+    </div>
+
+  </ion-content>
+
+</ion-view>
+

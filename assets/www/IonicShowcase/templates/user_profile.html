@@ -1,0 +1,49 @@
+<ion-view>
+  <ion-content>
+
+    <h2 align="center" id="pageTitle">My Profile</h2>
+    <div class="card">
+      <div class="item item-avatar">
+        <img src="./images/ic_user_image.jpg">
+        <h2>{{userAuthDetails.uFname}} {{userAuthDetails.uLname}} </h2>
+        <h3>{{userAuthDetails.uDomain}}</h3>
+      </div>
+
+      <div class="item item-body" id="userProfileLabels">
+
+        <div class="row">
+          <div class="col col-40"><b>DAS ID:</b></div>
+          <div class="col col-60">{{userAuthDetails.uid}}</div>
+        </div>
+        <div class="row">
+          <div class="col col-40"><b>Cost Center:</b></div>
+          <div class="col col-60">{{userAuthDetails.uCostCenter}}</div>
+        </div>
+        <div class="row">
+          <div class="col col-40"><b>Organisation level:</b></div>
+          <div class="col col-60">{{userAuthDetails.uOrgLevel}}</div>
+        </div>
+        <div class="row">
+          <div class="col col-40"><b>Location:</b></div>
+          <div class="col col-60">{{userAuthDetails.uLocation}}</div>
+        </div>
+        <div class="row">
+          <div class="col col-40"><b>Address:</b></div>
+          <div class="col col-60">{{userAuthDetails.uAddress}}</div>
+        </div>
+        <div class="row">
+          <div class="col col-40"><b>Contact:</b></div>
+          <div class="col col-40">{{userAuthDetails.uContact}}</div>
+        </div>
+      </div>
+    </div>
+
+  </ion-content>
+
+</ion-view>
+
+
+
+
+
+

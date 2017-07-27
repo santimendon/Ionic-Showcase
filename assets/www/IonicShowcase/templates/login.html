@@ -1,0 +1,46 @@
+<ion-view>
+  <ion-content>
+
+    <hgroup>
+      <i class="icon app-logo ion-ios-ionic-outline"></i>
+      <h2>Ionic Showcase</h2>
+      <h4>by Santi Mendon</h4>
+    </hgroup>
+
+    <p style="font-size:20px" align="center"><font face="verdana">Please Login</font></p>
+
+    <form class="loginForm">
+      <div class="list">
+        <label class="item item-input">
+          <i class="icon ion-android-mail placeholder-icon"></i>
+          <input type="email" placeholder="Email"
+                 ng-model="loginDetails.email">
+        </label>
+        <label class="item item-input">
+          <i class="icon ion-android-call placeholder-icon"></i>
+          <input type="tel" placeholder="Mobile" ng-model="loginDetails.mobile">
+        </label>
+      </div>
+      <li class="item item-checkbox">
+        Remember me
+        <label class="checkbox">
+          <input type="checkbox" ng-model="loginDetails.rememberMe">
+        </label>
+      </li>
+
+      <button class="button button-positive button-block" ng-click="login()">
+        Sign-In
+      </button>
+
+      <p class="linkRegister" align="center">New user? Sign-up here</p>
+    </form>
+
+  </ion-content>
+
+</ion-view>
+
+
+
+
+
+

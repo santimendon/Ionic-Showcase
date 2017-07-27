@@ -1,0 +1,69 @@
+<ion-view>
+  <ion-content>
+
+    <h2 align="center" id="pageTitle">Sqlite Operation</h2>
+
+    <form class="sqlitePageForm">
+      <div class="list">
+        <label class="item item-input">
+          <div class="input-label">
+            DAS ID
+          </div>
+          <input type="text" placeholder="Ex: A619046" style='text-transform:uppercase'
+                 ng-model="formDetails.dasId">
+        </label>
+        <label class="item item-input item-stable">
+          <div class="input-label">
+            Name
+          </div>
+          <input type="text" placeholder="Ex: Jane Doe"
+                 ng-model="formDetails.name">
+        </label>
+        <label class="item item-input">
+          <div class="input-label">
+            Mobile
+          </div>
+          <input type="tel" placeholder="Ex: 9899898998"
+                 ng-model="formDetails.mobile">
+        </label>
+        <label class="item item-input item-select item-stable">
+          <div class="input-label">
+            Request Type
+          </div>
+
+          <select ng-model="formDetails.requestType">
+            <option>Incident</option>
+            <option selected>Service</option>
+            <option>Change</option>
+          </select>
+        </label>
+        <label class="item item-input">
+          <div class="input-label">
+            Description
+          </div>
+          <input type="text" placeholder="Not more than 100 characters"
+                 ng-model="formDetails.requestDescription">
+        </label>
+        <label class="item item-input item-stable">
+          <div class="input-label">
+            Date
+          </div>
+          <input type="datetime-local" ng-model="formDetails.date">
+        </label>
+      </div>
+      <button class="button button-balanced button-block" ng-click="saveRequest()">
+        Save request
+      </button>
+
+    </form>
+
+
+  </ion-content>
+
+</ion-view>
+
+
+
+
+
+

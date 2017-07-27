@@ -1,0 +1,24 @@
+<ion-view>
+  <ion-content scroll="false">
+
+    <h2 align="center" id="pageTitle">Geolocator</h2>
+
+    <div class="item item-body" id="barcodePage">
+      <div class="row">
+        <div class="col col-40"><b>Latitude:</b></div>
+        <div class="col col-60">{{geolocation.latitude}}</div>
+      </div>
+      <div class="row">
+        <div class="col col-40"><b>Longitude:</b></div>
+        <div class="col col-60">{{geolocation.longitude}}</div>
+      </div>
+
+      <button class="button button-dark button-block" ng-click="locate()">
+        Locate
+      </button>
+    </div>
+
+  </ion-content>
+
+</ion-view>
+
